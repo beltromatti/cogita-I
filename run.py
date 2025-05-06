@@ -2,6 +2,7 @@ import argparse
 import json
 from src.inference import chat_inference
 from src.utils import download_model
+from src.app import launch_app
 
 def main():
     """Main entry point for the Cogita AI 1.3b Project"""
@@ -17,13 +18,13 @@ def main():
         config = json.load(f)
 
     if args.download:
-        download_model("beltromatti/cogita-ai-1.3b")
+        download_model("beltromatti/cogita-I")
     elif args.inference:
         while True:
             prompt = input("Hi! how can i help you? : ")
             chat_inference(prompt)
     elif args.app:
-        pass
+        launch_app()
 
 if __name__ == "__main__":
     main()

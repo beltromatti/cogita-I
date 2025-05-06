@@ -13,9 +13,9 @@ DEFAULT_MAX_NEW_TOKENS = 1024
 MAX_INPUT_TOKEN_LENGTH = int(os.getenv("MAX_INPUT_TOKEN_LENGTH", "4096"))
 
 DESCRIPTION = """\
-# DeepSeek-6.7B-Chat
+# Cogita-I-Chat
 
-This Space demonstrates model [DeepSeek-Coder](https://huggingface.co/deepseek-ai/deepseek-coder-6.7b-instruct) by DeepSeek, a code model with 6.7B parameters fine-tuned for chat instructions.
+This Space demonstrates model [Cogita-I](https://huggingface.co/beltromatti/cogita-I) by Mattia Beltrami, a machine learning code optimized model.
 """
 
 if not torch.cuda.is_available():
@@ -23,9 +23,9 @@ if not torch.cuda.is_available():
 
 
 if torch.cuda.is_available():
-    model_id = "deepseek-ai/deepseek-coder-6.7b-instruct"
-    model = AutoModelForCausalLM.from_pretrained(model_id, torch_dtype=torch.bfloat16, device_map="auto")
-    tokenizer = AutoTokenizer.from_pretrained(model_id)
+    model_path = "model/"
+    model = AutoModelForCausalLM.from_pretrained(model_path, torch_dtype=torch.bfloat16, device_map="auto")
+    tokenizer = AutoTokenizer.from_pretrained(model_path)
     tokenizer.use_default_system_prompt = False
     
 
@@ -113,7 +113,7 @@ chat_interface = gr.ChatInterface(
             value=1,
         ),
     ],
-    stop_btn=None,
+    stop_btn=True,
     examples=[
         ["implement snake game using pygame"],
         ["Can you explain briefly to me what is the Python programming language?"],
@@ -125,5 +125,5 @@ with gr.Blocks(css="style.css") as demo:
     gr.Markdown(DESCRIPTION)
     chat_interface.render()
 
-if __name__ == "__main__":
-    demo.queue().launch(share=True)
+def launch_app():
+    demo.queue(max_size=1).launch(share=True)
