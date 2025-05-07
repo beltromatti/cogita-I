@@ -1,10 +1,19 @@
 from transformers import AutoModelForCausalLM, AutoTokenizer
 
-def download_model(model_name):
-    # Scarica il modello e il tokenizer, forzando l'uso di safetensors
-    model = AutoModelForCausalLM.from_pretrained(model_name)
+def download_model(model_name, save_directory="./model"):
+    # download the model and the tokenizer
+    model = AutoModelForCausalLM.from_pretrained(
+        model_name,
+        use_safetensors=True,
+        trust_remote_code=False,
+        torch_dtype="bfloat16"
+    )
     tokenizer = AutoTokenizer.from_pretrained(model_name)
 
-    # Salva il modello e il tokenizer in formato safetensors
-    model.save_pretrained("./model", safe_serialization=True)
+    # Save the model and the tokenizer in .safetensors format
+    model.save_pretrained(
+        save_directory, 
+        safe_serialization=True, 
+        max_shard_size="10GB"
+    )
     tokenizer.save_pretrained("./model")
