@@ -14,6 +14,6 @@ def download_model(model_name, save_directory="./model"):
     model.save_pretrained(
         save_directory, 
         safe_serialization=True, 
-        max_shard_size="10GB"
+        max_shard_size="100GB"
     )
     tokenizer.save_pretrained("./model")
