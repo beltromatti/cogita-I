@@ -6,6 +6,8 @@ model/generation_config.json
 model/tokenizer.json
 model/tokenizer_config.json
 
+# Gradio
+.gradio
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
