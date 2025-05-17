@@ -1,8 +1,8 @@
 ---------------------------
-COGITA AI LICENSE AGREEMENT
+NOESIS AI LICENSE AGREEMENT
 
 Version 1.0, 06 May 2025
-Copyright (c) 2025 Cogita AI
+Copyright (c) 2025 Noesis AI
 ---------------------------
 
 
@@ -10,14 +10,14 @@ Copyright (c) 2025 Cogita AI
 1) OVERVIEW
 
 
-The Cogita AI Model is a fine-tuned derivative of the DeepSeek Coder model, designed for advanced ai related coding tasks and explanations. This COGITA AI Licence Agreement governs its use, modification, and distribution, combining the GNU General Public License v3 (GPLv3) with the use restrictions of the DeepSeek License.
+The Cogita I Model is a fine-tuned derivative of the DeepSeek Coder model, designed for advanced ai related coding tasks and explanations. This NOESIS AI Licence Agreement governs its use, modification, and distribution, combining the GNU General Public License v3 (GPLv3) with the use restrictions of the DeepSeek License.
 
 
 
 2) PREAMBLE
 
 
-This COGITA AI Licence Agreement governs the use, modification, and distribution of a derivative model based on the DeepSeek model. The derivative model is released under the GNU General Public License version 3 (GPLv3), ensuring that users have the freedom to use, modify, and share the model while preserving its open-source nature. The full text of the GPLv3 is provided in Section 3 of this agreement.
+This NOESIS AI Licence Agreement governs the use, modification, and distribution of a derivative model based on the DeepSeek model. The derivative model is released under the GNU General Public License version 3 (GPLv3), ensuring that users have the freedom to use, modify, and share the model while preserving its open-source nature. The full text of the GPLv3 is provided in Section 3 of this agreement.
 As a derivative of the DeepSeek Coder model, this model is also subject to the terms of the DeepSeek License Agreement (Version 1.0, 23 October 2023), included in Section 4. In particular, the use-based restrictions outlined in Attachment A of the DeepSeek License must be respected in all uses and distributions of this model to promote responsible AI development and prevent misuse. These restrictions are designed to balance open access with ethical considerations, ensuring that the model is used in compliance with applicable laws and in a manner that avoids harm.
 By combining the open-source principles of the GPLv3 with the responsible use provisions of the DeepSeek License, this agreement seeks to foster innovation, collaboration, and ethical AI practices. Users are required to comply with both licenses as applicable: the GPLv3 governs the distribution and modification of the model and its source code, while the DeepSeek License imposes mandatory use restrictions that apply to the model and its derivatives. For further details, refer to the full text of both licenses below.
 
