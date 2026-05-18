@@ -19,6 +19,6 @@ For complete licensing terms, refer to the [LICENSE](LICENSE) file in the GitHub
 ## Noesis AI
 **Noesis AI** is a non-profit research organization developing brain-inspired architectures, novel training paradigms, efficient tensor computation, and medical AI applications — all with the ultimate goal of enabling Artificial General Intelligence.
 
-- Website: [noesisai.org](https://noesisai.org)
+- Website: [noesisai.org](https://noesisai.it)
 - Based in: Milan, Italy
 - Founder: *Mattia Beltrami*, Computer Engineering student at Politecnico di Milano
